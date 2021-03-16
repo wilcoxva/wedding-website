@@ -4,6 +4,8 @@ function App() {
   return (
     <div className="App">
       <header>
+        <div className="nav">  
+        </div>  
       </header>
       <body>
       </body>
