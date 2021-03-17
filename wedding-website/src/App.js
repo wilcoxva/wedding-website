@@ -8,6 +8,9 @@ function App() {
         </div>  
       </header>
       <body>
+        <div className="container">
+          <img src={photo} className="photo" alt="Virginia and Patrick" />
+        </div>
       </body>
     </div>
   );
