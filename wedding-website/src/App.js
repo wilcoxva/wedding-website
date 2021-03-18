@@ -10,6 +10,8 @@ function App() {
       <body>
         <div className="container">
           <img src={photo} className="photo" alt="Virginia and Patrick" />
+          <div className="inner-container">
+          </div>
         </div>
       </body>
     </div>
