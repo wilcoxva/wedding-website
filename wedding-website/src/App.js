@@ -11,6 +11,10 @@ function App() {
         <div className="container">
           <img src={photo} className="photo" alt="Virginia and Patrick" />
           <div className="inner-container">
+            <h1>Save the Date</h1>
+            <h2>May 7, 2022</h2>
+            <h3>Nag's Head, North Carolina</h3>
+            <h2>365 days away...</h2>
           </div>
         </div>
       </body>
