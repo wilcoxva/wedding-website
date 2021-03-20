@@ -15,6 +15,7 @@ function App() {
             <h2>May 7, 2022</h2>
             <h3>Nag's Head, North Carolina</h3>
             <h2>365 days away...</h2>
+            <img src={map} alt="map" className="map"/>
           </div>
         </div>
       </body>
