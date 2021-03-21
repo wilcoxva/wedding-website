@@ -1,3 +1,5 @@
+import photo from './Untitled.png';
+import map from './map.png';
 import './App.css';
 
 function App() {
