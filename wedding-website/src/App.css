@@ -46,3 +46,10 @@
   float: center;
   margin: 200px 50px 20px 250px;
 }
+
+.photo {
+  width: 600px;
+  height: 900px;
+  margin-left: 200px;
+}
+
