@@ -1,4 +1,4 @@
-import photo from './Untitled.png';
+import photo from './photo.jpg';
 import map from './map.png';
 import './App.css';
 
