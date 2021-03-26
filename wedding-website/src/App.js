@@ -3,6 +3,13 @@ import map from './map.png';
 import './App.css';
 
 function App() {
+
+  const calculateTimeLeft = () => {
+
+    let year = new Date().getFullYear();
+    
+  }
+
   return (
     <div className="App">
       <header>
