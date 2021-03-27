@@ -6,7 +6,7 @@ function App() {
 
   const calculateTimeLeft = () => {
 
-    let year = new Date().getFullYear();
+    const difference = +new Date(`05/07/2022`) - +new Date();
     
   }
 
