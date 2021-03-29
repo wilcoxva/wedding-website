@@ -1,6 +1,7 @@
 import photo from './photo.jpg';
 import map from './map.png';
 import './App.css';
+import React, { useEffect, useState } from "react";
 
 function App() {
 
@@ -22,6 +23,8 @@ function App() {
     return timeLeft;
     
   }
+
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   return (
     <div className="App">
