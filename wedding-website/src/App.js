@@ -26,6 +26,15 @@ function App() {
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTimeLeft(calculateTimeLeft());
+      setYear(new Date().getFullYear());
+    }, 1000);
+    // Clear timeout if the component is unmounted
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="App">
       <header>
