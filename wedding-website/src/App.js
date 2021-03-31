@@ -29,11 +29,25 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setTimeLeft(calculateTimeLeft());
-      setYear(new Date().getFullYear());
     }, 1000);
     // Clear timeout if the component is unmounted
     return () => clearTimeout(timer);
-  }, []);
+
+  });
+
+  const timerComponents = [];
+
+    Object.keys(timeLeft).forEach((interval) => {
+      if (!timeLeft[interval]) {
+        return;
+      }
+    
+      timerComponents.push(
+        <span>
+          {timeLeft[interval]} {interval}{" "}
+        </span>
+      );
+    });
 
   return (
     <div className="App">
@@ -48,7 +62,7 @@ function App() {
             <h1>Save the Date</h1>
             <h2>May 7, 2022</h2>
             <h3>Nag's Head, North Carolina</h3>
-            <h2>365 days away...</h2>
+            <h2>{timerComponents.length ? timerComponents : <span>Time's up!</span>}</h2>
             <img src={map} alt="map" className="map"/>
           </div>
         </div>
